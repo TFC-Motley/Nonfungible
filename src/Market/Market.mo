@@ -489,7 +489,7 @@ module Market {
     }
   };
 
-  public func settle( m : Market, i : Index, caller : ?Principal, bypass : Bool ) : async Return<AccountId> {
+  public func settle( m : Market, i : Index, caller : ?Principal, bypass : Bool ) : async* Return<AccountId> {
 
     assert m.init;
 
